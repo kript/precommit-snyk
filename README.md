@@ -17,7 +17,7 @@ Install `pre-commit` package (you can use `brew install pre-commit` command).
 In your repository edit or create a `.pre-commit-config.yaml` file and configure the pre-commit. This is the basic configuration of this pre-commit hook in your .yaml file:
 
 ```
-- repo: https://github.com/EconomistDigitalSolutions/cp-precommit-snyk.git
+- repo: https://github.com/dorapeile/precommit-snyk.git
   sha: master
   hooks:
     - id: snyk-audit
