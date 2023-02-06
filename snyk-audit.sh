@@ -2,4 +2,4 @@
 
 set -e
 
-snyk test $1
+snyk test $1 --file=pom.xml
