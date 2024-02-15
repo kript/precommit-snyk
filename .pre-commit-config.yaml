@@ -1,0 +1,28 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: detect-private-key
+    -   id: end-of-file-fixer
+    -   id: requirements-txt-fixer
+    -   id: trailing-whitespace
+- repo: https://github.com/codespell-project/codespell
+  rev: v2.2.6
+  hooks:
+  - id: codespell
+    args: [-I, .codespellignore]
+- repo: https://github.com/Lucas-C/pre-commit-hooks
+  rev: v1.5.5
+  hooks:
+    - id: remove-tabs
+- repo: https://github.com/jumanjihouse/pre-commit-hooks
+  rev: 3.0.0 #v3.0.0 doesn't work for some reason
+  hooks:
+    - id: shellcheck
+# - repo: https://github.com/dorapeile/precommit-snyk.git
+#   sha: master
+#   rev: 1fe3c98f1c8e0d6f307ba8600c2d57c12c203ea9
+#   hooks:
+#     - id: snyk-audit

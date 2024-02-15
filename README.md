@@ -1,12 +1,12 @@
 # How to use pre-commit hook
 
-## Prerequisities
+## Prerequisites
 
 You will need a **Snyk account**. Make sure you have one or sign up.
 
 ## Installation
 
-Install Snyk CLI using the command `npm install -g snyk`. Once installed, you need to authenticate with your Snyk account. Use the command `snyk auth` and your Snyk acount credentials.
+Install Snyk CLI using the command `npm install -g snyk`. Once installed, you need to authenticate with your Snyk account. Use the command `snyk auth` and your Snyk account credentials.
 
 More information on this topic can be found in ofiicial documentation on: https://snyk.io/docs/cli-installation/
 
@@ -17,8 +17,9 @@ Install `pre-commit` package (you can use `brew install pre-commit` command).
 In your repository edit or create a `.pre-commit-config.yaml` file and configure the pre-commit. This is the basic configuration of this pre-commit hook in your .yaml file:
 
 ```
-- repo: https://github.com/dorapeile/precommit-snyk.git
+- repo: https://github.com/kript/precommit-snyk.git
   sha: master
+  rev: 1fe3c98f1c8e0d6f307ba8600c2d57c12c203ea9
   hooks:
     - id: snyk-audit
 ```
