@@ -19,7 +19,7 @@ In your repository edit or create a `.pre-commit-config.yaml` file and configure
 ```
 - repo: https://github.com/kript/precommit-snyk.git
   sha: master
-  rev: v1.1
+  rev: v1.3
   hooks:
     - id: snyk-audit
 ```
